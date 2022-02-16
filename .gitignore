@@ -1,0 +1,14 @@
+
+node_modules/
+target/
+.npmrc
+frontend/generated/index.ts
+frontend/generated/vaadin.ts
+frontend/index.html
+package.json
+pnpm-lock.yaml
+pnpmfile.js
+tsconfig.json
+types.d.ts
+webpack.config.js
+webpack.generated.js
