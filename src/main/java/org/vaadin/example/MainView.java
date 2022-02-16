@@ -17,21 +17,13 @@ import com.vaadin.flow.router.Route;
 /**
  * A sample Vaadin view class.
  */
-@Route(layout = MainLayout.class)
+@Route
 public class MainView extends VerticalLayout {
 
     public MainView() {
         // the Bootsrap layout brings in a decent margin/padding already
         setPadding(false);
 
-        /*
-         * As a demo, we have overridden the font to be serif in h elements
-         * in bootstrap css. It should however NOT affect this H1 element by
-         * Vaadin as we put it into the shadow dom css, but only h elements
-         * inside "bootstrap" parts (~ in footer). See frontend/views/bootstrap-element.ts
-         * If you want both bootstrap & vaadin parts to obey, simply add to
-         * shared-styles.css file.
-         */
         add(new H1("Hello from Vaadin app"));
         TextField textField = new TextField("Your name");
         Button button = new Button("Say hello",

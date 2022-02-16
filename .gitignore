@@ -4,7 +4,6 @@ target/
 .npmrc
 frontend/generated/index.ts
 frontend/generated/vaadin.ts
-frontend/index.html
 package.json
 pnpm-lock.yaml
 pnpmfile.js
