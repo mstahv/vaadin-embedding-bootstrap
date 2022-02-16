@@ -1,0 +1,58 @@
+/*
+ Most of Bootstrap CSS in this example is encapsulated into
+ bootstrap-element.ts and this way into shadow DOM, so that it doesn't
+ have a chance to disturb the Vaadin app itself. Some CSS needs to
+ be applied though outside those parts. Those are copied here using
+ browser inspector. Also the stuff inside pricing.css file in the
+ original example is declared here.
+*/
+
+body {
+    background-image: linear-gradient(180deg, #eee, #fff 100px, #fff);
+}
+
+.container {
+    max-width: 960px;
+}
+
+.pricing-header {
+    max-width: 700px;
+}
+
+.py-3 {
+    padding-top: 1rem!important;
+    padding-bottom: 1rem!important;
+}
+
+@media (min-width: 1400px)
+.container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1320px;
+}
+@media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+@media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+@media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+@media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    width: 100%;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+}
+
+
+
+
