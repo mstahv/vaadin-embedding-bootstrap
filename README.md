@@ -19,7 +19,7 @@ main area of the page.
 
 Things to check out in this implementation:
 
- * [bootstrap-element.ts](https://github.com/mstahv/vaadin-embedding-bootstrap/blob/master/frontend/views/bootstrap-element.ts) that provides a superclass for "bootstrap Lit templates". The Bootstrap CSS is defined in this class and will only be applied to shadow dom of the extending "bootstrap components".
+ * [bootstrap-element.ts](https://github.com/mstahv/vaadin-embedding-bootstrap/blob/master/frontend/views/bootstrap-element.ts) that provides a superclass for "bootstrap Lit templates". The main Bootstrap CSS is defined in this class (pulled in via npm) and will only be applied to shadow dom of the extending "bootstrap components".
  * [WebsiteHeader.java](https://github.com/mstahv/vaadin-embedding-bootstrap/blob/master/src/main/java/org/vaadin/example/WebsiteHeader.java) and [website-header.ts](https://github.com/mstahv/vaadin-embedding-bootstrap/blob/master/frontend/views/website-header.ts) which wrap the header part of the example into a Lit template and a shadow DOM snippet.
  * Similar WebsiteFooter class
  * [MainLayout.java](https://github.com/mstahv/vaadin-embedding-bootstrap/blob/master/src/main/java/org/vaadin/example/MainLayout.java) that is used by the MainView example view. That brings in the "Bootstrap components" and places the actual view in middle.
